@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Showcase</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #f2f4f8);
+            margin: 0;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #003366;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin-top: 15px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        audio, video {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>🌐 Web Showcase</h1>
+
+<div class="container">
+
+    <!-- LINKS SECTION -->
+    <div class="card">
+        <h2>🔗 Links</h2>
+
+        <p>
+            Internal link:
+            <a href="#multimedia">Jump to Multimedia Section</a>
+        </p>
+
+        <p>
+            External link (opens in new tab):
+            <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">
+                W3Schools HTML Guide
+            </a>
+        </p>
+
+        <p>
+            Email link:
+            <a href="mailto: alexpechon01@gmail.com">Send Email</a>
+        </p>
+    </div>
+
+    <!-- IMAGES SECTION -->
+    <div class="card">
+        <h2>🖼 Images</h2>
+        <img src="mm.jpg" alt="My picture">
+    </div>
+
+    <!-- MULTIMEDIA SECTION -->
+    <div class="card" id="multimedia">
+        <h2>🎬 Multimedia</h2>
+
+        <p><strong>Audio Example:</strong></p>
+        <audio controls>
+            <source src="bb.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p><strong>Video Example:</strong></p>
+        <video controls preload="metadata" playsinline>
+            <source src="oo.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Web Showcase | Created by Alex
+</footer>
+
+</body>
+</html>
